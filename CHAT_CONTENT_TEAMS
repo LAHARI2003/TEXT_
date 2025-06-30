@@ -1,0 +1,182 @@
+resources
+ 
+-> to understand an output of what is LLMs
+ 
+https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f
+ 
+->https://docs.llamaindex.ai/en/stable/getting_started/concepts/
+ 
+below how to access llama 2 to get word embediings
+->https://medium.com/@sauquetalex/getting-word-embeddings-for-llama2-9a01c0d07d37
+ 
+-> https://www.salesforce.com/in/agentforce/build-ai-agent/
+ 
+->https://prashanth08.medium.com/building-your-retrieval-augmented-generation-rag-for-custom-llms-d5f95ed5ed7a
+ 
+->ai agent framwork
+https://www.lyzr.ai/blog/ai-agent-framework/#:~:text=AI%20agent%20frameworks%20are%20platforms,workflows%2C%20or%20interacting%20with%20users.
+ 
+to understand about the transfomers
+->https://deepanshusachdeva5.medium.com/understanding-transformers-step-by-step-word-embeddings-4f4101e7c2f
+ 
+ 
+->to understan the transformer neural network
+https://builtin.com/artificial-intelligence/transformer-neural-network
+ 
+ 
+-> agent using monster api key
+https://www.analyticsvidhya.com/blog/2024/08/how-to-build-an-ai-agent-using-llama-index-and-monsterapi/
+ 
+ 
+->git hub of llama index examples
+https://github.com/run-llama/llama_index/blob/main/docs/docs/examples/query_engine/citation_query_engine.ipynb
+ 
+ 
+-> citation of the nodes in rag 
+https://akash-mathur.medium.com/advanced-rag-optimizing-retrieval-with-additional-context-metadata-using-llamaindex-aeaa32d7aa2f
+ 
+ 
+-->
+easy way to visualize the paths taken by your workflow is usin arize phoenix..( easy integration with llma index workflow)
+https://arize.com/blog/llamaindex-workflows-a-new-way-to-build-cyclical-agents/
+ 
+->
+===========
+
+
+--> semantic routing
+https://blog.codegpt.co/semantic-router-enhancing-control-in-llm-conversations-68ce905c8d33
+https://www.linkedin.com/pulse/semantic-routing-powerful-approach-next-generation-ai-thomas-lynch-lmtic
+
+=====================
+
+https://www.analyticsvidhya.com/blog/2024/10/function-calling-llms/#:~:text=Anthropic%20Claude%20Sonnet%203.5&text=Anthropic%20Claude%204.5%20supports%20function,the%20user%20in%20real%20time.
+ 
+llms that support function calling
+
+===============================
+
+
+https://medium.com/metaor-artificial-intelligence/solving-the-class-imbalance-problem-58cb926b5a0f
+
+
+
+==========================
+
+https://github.com/arunpshankar/Agentic-Workflow-Patterns
+
+
+
+=========================
+
+
+help->examples->doc->directve->pragma - INTERLEAVE 
+
+=============================
+
+/sw/mentor/catapult_c/2024.1_2/Mgc_home/pkgs/ccs_libs/interfaces/amba/
+ 
+this has some .h files
+
+
+
+================================
+
+https://www.swebench.com/
+
+https://arxiv.org/html/2405.03058v1
+https://www.sciencedirect.com/science/article/pii/S0031320321004350
+
+
+http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+
+https://teams.microsoft.com/l/message/48:notes/1745304017560?context=%7B%22contextType%22%3A%22chat%22%2C%22oid%22%3A%228%3Aorgid%3Ae5d5acb5-2e4d-4124-97d6-8623bbe3e49a%22%7D
+https://arxiv.org/abs/2503.20783
+
+https://platform.openai.com/docs/guides/function-calling?api-mode=chat
+
+https://openlm.ai/chatbot-arena/
+
+https://platform.openai.com/traces/trace?trace_id=trace_1945f64e1417497890165242f482f331
+
+https://labs.google.com/mariner/landing
+
+
+
+https://platform.openai.com/traces/trace?trace_id=trace_2315cbc1492c48289437e63642bff459
+
+https://www.comp.nus.edu.sg/~tcarlson/
+MOMs 02_06_25 :
+Things to concentrate from now on :
+If the RTL needs to be sent as a whole or as a block structure to the HLS workflow.
+What are we expecting from the optimized code to give us in the end. (in the trade off aspect)
+What RTL code attributes should be emphasized to produce authentic Micro IR for effective HLS code generation?
+25 to 30 solid queries are needed for benchmarking every setup we are making.
+With the Nvidia repository, we can extract synthetic data that maintains high quality.
+ 
+
+
+
+
+https://p1ping.github.io/
+
+
+https://platform.openai.com/traces/trace?trace_id=trace_1c747834c3b7422f8290ec939182f5d6
+
+4.1 as base model
+========================================
+
+
+
+
+Expected code features 
+ 
+ 
+1 - "array_dimensions": "16x64",    --- array dimensions of which array are being highlighted.
+2 -  "required_pragmas": {
+            "pipeline": "HLS_PIPELINE(1)",
+            "unroll": "HLS_UNROLL",
+            "array_partition": "HLS_ARRAY_PARTITION(mac_cells, complete, 1)"
+        }  ---- to which loops are these getting applied.
+3- required comments not needed.
+4 - credit manager &&& protocol  - not sure of what it does got pruned when corrected the code using claude.
+5-     "input_interfaces": ["csc2cmac_data_t", "csc2cmac_weight_t"],
+        "output_interfaces": ["cmac2cacc_data_t"],
+        "control_interfaces": ["cmac_config_t", "cmac_status_t"],
+    --- mentioning about precision signed or unsigned details inside these structs would be better.
+ 
+Functional Test Case 
+ 
+INT 8 , INT 16 , FP16
+ 
+These three precison types have the same functinal flow , but different  accumulator precision and return types  so generate the attributes by iterating through the code by maintaining a commonality 
+
+
+
+
+
+==================================
+
+
+
+
+
+We are experiencing an issue while running our Python script that uses pyautogui. The script is failing with the following error:
+DisplayConnectionError: Can't connect to display "azurl12134:5.0": b'No protocol specified\n'
+ 
+Error Details:
+The error occurs when importing pyautogui module
+System appears to be unable to connect to the X11 display server
+Error message indicates "No protocol specified"
+
+
+
+
+
+
+
+
+
+
+
+
